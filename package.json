@@ -1,0 +1,14 @@
+{
+  "name": "timelogger",
+  "version": "1.0.0",
+  "description": "A CLI to log time on tasks",
+  "main": "logger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seth M. Speaks",
+  "license": "ISC",
+  "dependencies": {
+    "mkdirp": "^0.5.1"
+  }
+}
