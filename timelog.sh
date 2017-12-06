@@ -1,3 +1,3 @@
 #!/bin/bash
-PWD=/Users/sspeaks/Web_Projects/Timelog
+PWD=R_DIR
 node $PWD/logger $1 $2 $3 $4 $5

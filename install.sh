@@ -1,3 +1,7 @@
 #!/bin/bash
-sudo chmod +x timelog.sh
-sudo cp timelog.sh /usr/local/bin/timelog
+PWD=$(pwd)
+TFILE=$(cat timelog.sh)
+NEWTL=${TFILE//R_DIR/$PWD}
+echo "$NEWTL" > /usr/local/bin/timelog
+sudo chmod +x /usr/local/bin/timelog
+
