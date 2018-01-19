@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let project of projectData">
+    <h2>{{project.project}}{{project.current ? "*" : ""}}: {{project.hours | round }}</h2>
+  </li>
+</ul>
+<svg width="300" height="300" viewBox="0 0 150 150" preserveAspectRatio="xMidYMid meet" style="border: 1px solid #cccccc;">
+  <path *ngFor="let slice of projectData" [attr.d]="slice.path" stroke="black" fill="transparent" [attr.transform]="slice?.transform"></path>
+</svg>
+<h2>{{projectBuffer}}</h2>
