@@ -40,7 +40,7 @@ function initTimelog() {
 						if (err)
 							console.log(err);
 						else {
-							fs.writeFile(historyPath, timeLogToString(obj));
+							fs.writeFileSync(historyPath, timeLogToString(obj));
 						}
 					});
 					resolve(createLogFile());
